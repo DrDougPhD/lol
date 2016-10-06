@@ -1,24 +1,23 @@
-var arm = [
-  '|',       // |
-  '\\',      // \
-  '&#8210;', // ‒
-  '&#8767;', // ∿
-  '&#8210;', // ‒
-  '/'        // /
+var cycle = [
+	'|',       // |
+	'\\',      // \
+	'&#8210;', // ‒
+	'&#8767;', // ∿
+	'&#8210;', // ‒
+	'/'        // /
 ];
 var i = 0;
-var l,r;
+var arms;
 
 function flail() {
-  i++;
-  r.innerHTML = arm[6-i];
-  i %= 6;
-  l.innerHTML = arm[i];
+	i++;
+	arms[1].innerHTML = cycle[6-i];
+	i %= 6;
+	arms[0].innerHTML = cycle[i];
 };
 
 window.onload = function() {
-  l = document.getElementById('l');
-  r = document.getElementById('r');
-  flail();
-  window.setInterval(flail, 250);
+	arms = document.getElementsByTagName('span');
+	flail();
+	window.setInterval(flail, 250);
 };
