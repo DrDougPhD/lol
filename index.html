@@ -8,6 +8,19 @@
 	<script src="script.js"></script>
 </head>
 <body>
+
+	<div id="outer">
+		<div id="middle">
+			<div id="inner">
+
+				<noscript>
+					Turn on JavaScript for some WOW!
+				</noscript>
+
+			</div>
+		</div>
+	</div>
+
 	<script>
 		<!--
 		var div = document.createElement("div");
@@ -20,21 +33,8 @@
 		div.appendChild(
 				document.createElement("span")
 		);
-		document.body.appendChild(div);
+		document.getElementById("inner").appendChild(div);
 		-->
 	</script>
-
-	<div class="outer">
-		<div class="middle">
-			<div class="inner">
-
-				<noscript>
-					Turn on JavaScript for some WOW!
-				</noscript>
-
-			</div>
-		</div>
-	</div>
-
 </body>
 </html>
