@@ -2,6 +2,7 @@ body {
 	background: #000000;
 	color: #FFFFFF;
 	font: 100px courier, monospace;
+	overflow: hidden;
 }
 
 div{
@@ -11,8 +12,8 @@ div{
 #outer {
 	display: table;
 	position: absolute;
-	height: 99%;
-	width: 99%;
+	height: 100%;
+	width: 100%;
 }
 
 #middle {
