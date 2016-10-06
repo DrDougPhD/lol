@@ -1,0 +1,13 @@
+body {
+	background: #000000;
+	color: #FFFFFF;
+	font: 100px courier, monospace;
+}
+
+div{
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	height: 0;
+	text-align: center;
+}
